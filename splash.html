@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project1.css">
+</head>
+
+
+
+<style>body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", serif;
+    font-size: 13px;
+    color: #5B5B5B;
+  }
+  
+  .header-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    background: rgb(181, 13, 13);
+  }
+  
+  .header{
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  .logo{
+    float: left;
+  }
+  
+  .logo h1{
+    line-height: 120px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: -2px;
+  }
+  
+  .logo h1 a{
+    color: #f5e6e6;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    text-align: center;
+  }
+  
+  .menu ul{
+    list-style: none;
+    margin: 0px;
+    padding-top: 50px;
+  }
+  
+  .current_page_item a{
+    background: rgb(105, 6, 6);
+    border-radius: 5px;
+  }
+  .menu ul li{
+    display: inline-block;
+    
+    
+  }
+  
+  .menu ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff;
+  }
+  
+  .menu ul li:hover a{
+    color: #9fc517;
+  }
+  
+  .content {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background: white;
+  }
+  
+  .post{
+    width: 600px;
+    float: left;
+    padding: 0px 0px 40px 0px;
+  }
+  
+  .post .title{
+    padding: 7px 0px 40px 0px;
+    letter-spacing: -1px;
+    font-size: 2.8em;
+    font-weight: 200;
+    margin: 0px;
+  }
+  
+  .post .title a{
+    text-decoration: none;
+    color: #222222;
+  }
+  
+  .entry .text{
+    text-align: justify;
+  }
+  
+  .links{
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .links a{
+    display: inline-block;
+    width: 90px;
+    padding: 5px;
+    background: #B50D0D;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.8em;
+  }
+  
+  .links .more-link{
+    margin-right: 10px;
+  }
+  
+  .sidebar{
+    width: 260px;
+    float: right;
+    padding: 40px;
+    background: #F0F0F0;
+    border-radius: 7px;
+    margin: 0px;
+  }
+  
+  .title-sidebar{
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    color: #222222;
+  }
+  
+  .sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+  }
+  
+  .sidebar ul li{
+    line-height: 40px;
+    border-bottom: 1px solid #E7EBED;
+  }
+  
+  .sidebar ul li a{
+    color: #B50D0D;
+    padding-left: 20px;
+    background: url("images/img04.jpg") no-repeat left 50%;
+  }
+  .clear-fix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .featured-content{
+    padding: 0px 0px 30px;
+  }
+  
+  .column1{
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+  }
+  
+  .featured-content h2{
+    padding: 0px 0px 20px;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 200;
+    color:rgb(34, 34, 34) ;
+  }
+  
+  .featured-content p{
+    margin-top: 0px;
+    line-height: 180%;
+  }
+  
+  .column2{
+    float: left;
+    width: 300px;
+  }
+  
+  .column3{
+    float: right;
+    width: 300px;
+  }
+  .button a{
+    display: block;
+    float: left;
+    width: 90px;
+    padding: 5px;
+    background: rgb(181, 13, 13);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .footer{
+    width: 100%;
+    height: 140px;
+    background: #B50D0D;
+    text-align: center;
+  }
+  .footer p{
+    line-height: 140px;
+    color: #9fc517;
+    font-size: 15px;
+  }</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header">
+                <div class="logo">
+                    <h1>
+                        <a href="#">Tecnologia</a>
+                    </h1>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li class="current_page_item">
+                            <a href="#">Home Page</a>
+                        </li>
+                       
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="page-content">
+                <div class="post">
+                    <h2 class="title">
+                        <a href="#">Historia da Tecnologia </a>
+                    </h2>
+                    <div class="entry">
+                        <a href="#">
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </a>
+                        <p class="text"></p>
+                            A Historia completa da <strong>Tecnologia</strong> em partes                            A história da tecnologia é a trajetória do desenvolvimento humano por meio da criação de ferramentas, métodos e sistemas que transformaram o ambiente e facilitaram a vida. Desde as ferramentas mais rudimentares até os avanços modernos da era digital, a tecnologia sempre esteve ligada à evolução da humanidade.
+                            
+                            1. Pré-História: As Primeiras Ferramentas
+                            A tecnologia começou na Pré-História, quando os primeiros hominídeos desenvolveram ferramentas rudimentares para sobrevivência.
+                            
+                            Ferramentas de Pedra: Cerca de 2,5 milhões de anos atrás, pedras lascadas foram usadas para cortar, caçar e raspar.
+                            Domesticação do Fogo: Cerca de 1 milhão de anos atrás, o fogo passou a ser utilizado para cozinhar alimentos, aquecer e afastar predadores.
+                            Arco e Flecha: Criados para melhorar a caça e defesa, permitindo maior eficiência e segurança.
+                            2. Revolução Agrícola (10.000 a.C.)
+                            Com o desenvolvimento da agricultura, as sociedades passaram de nômades para sedentárias.
+                            
+                            Ferramentas agrícolas como enxadas e arados facilitaram o cultivo de alimentos.
+                            A irrigação possibilitou o crescimento de plantações em regiões áridas.
+                            A domesticação de animais ajudou na produção e no transporte.
+                            Esses avanços permitiram o surgimento das primeiras civilizações e o crescimento populacional.
+                            
+                            3. Idade dos Metais (3.000 a.C.)
+                            A fundição de metais como cobre, bronze e ferro trouxe ferramentas e armas mais duráveis e eficientes.
+                            
+                            Roda: Invenção fundamental para o transporte e agricultura.
+                            Construções Avançadas: Civilizações como Egito e Mesopotâmia usaram tecnologia para criar pirâmides, canais de irrigação e aquedutos.
+                            Essa fase marcou o início de grandes empreendimentos que moldaram as sociedades antigas.
+                            
+                            4. Idade Média e Renascimento (Séculos V-XV)
+                            Após a queda do Império Romano, o desenvolvimento tecnológico foi mais lento, mas avanços importantes ocorreram.
+                            
+                            Moinhos de Água e de Vento: Usados para moer grãos e bombear água.
+                            Imprensa de Gutemberg (1450): Revolucionou a disseminação de conhecimento ao permitir a produção de livros em larga escala.
+                            No Renascimento, a ciência começou a ganhar destaque, com figuras como Leonardo da Vinci e Galileu Galilei promovendo ideias inovadoras.
+                            
+                            5. Revolução Científica (Séculos XVI-XVIII)
+                            A tecnologia passou a ser impulsionada pelo método científico.
+                            
+                            Telescópio e Microscópio: Expansão do conhecimento astronômico e biológico.
+                            Relógios Mecânicos: Melhoraram a precisão na medição do tempo.
+                            Máquinas Simples: Desenvolvimento de alavancas, polias e sistemas mecânicos.
+                            Esse período foi o precursor das grandes revoluções industriais.
+                            
+                            6. Revolução Industrial (Séculos XVIII-XIX)
+                            A Revolução Industrial foi um marco na história da tecnologia, transformando sociedades agrícolas em industriais.
+                            
+                            Máquina a Vapor: Criada por James Watt, tornou-se o motor da indústria e dos transportes.
+                            Fábricas e Produção em Massa: Introduziram novos métodos de produção, como o tear mecânico.
+                            Ferrovia e Locomotiva: Aceleraram o transporte de mercadorias e pessoas.
+                            Esse período trouxe urbanização, crescimento econômico e também desigualdades sociais.
+                            
+                            7. Século XX: A Era da Eletricidade e da Informação
+                            Com o advento da eletricidade e dos motores de combustão interna, o século XX testemunhou uma revolução tecnológica sem precedentes.
+                            
+                            Comunicação: Invenção do telefone (1876), rádio (1895) e televisão (1920).
+                            Aviação e Automóveis: Os carros e aviões tornaram o mundo mais interconectado.
+                            Primeiros Computadores: Máquinas como o ENIAC (1946) marcaram o início da computação moderna.
+                            Exploração Espacial: O homem foi à Lua em 1969, abrindo portas para a exploração do universo.
+                            8. Era Digital (Fim do Século XX e Século XXI)
+                            A revolução digital transformou a sociedade globalmente.
+                            
+                            Computadores Pessoais e Internet: Permitiram acesso rápido à informação e comunicação global.
+                            Dispositivos Móveis: Smartphones conectaram bilhões de pessoas em tempo real.
+                            Inteligência Artificial (IA): Avanços em aprendizado de máquina e robótica começaram a automatizar processos.
+                            Impressão 3D: Facilitou a produção de peças e até órgãos humanos.
+                            Tecnologias Sustentáveis: A busca por energia limpa, como solar e eólica, ganhou força.
+                            9. Impactos e Importância da Tecnologia
+                            Progresso e Bem-Estar
+                            Aumentou a expectativa de vida com avanços médicos.
+                            Facilitou a comunicação e o transporte.
+                            Democratizou o conhecimento por meio da internet.
+                            Desafios e Reflexões
+                            Dependência excessiva de tecnologia.
+                            Impactos ambientais e exploração de recursos naturais.
+                            Questões éticas em relação à automação e privacidade.
+                            10. O Futuro da Tecnologia
+                            O futuro da tecnologia continua promissor e desafiador.
+                            
+                            Computação Quântica: Resolverá problemas que os computadores atuais não conseguem.
+                            Exploração Espacial: Colonização de Marte e viagens interplanetárias.
+                            Saúde e Biotecnologia: Terapias genéticas e próteses biônicas avançadas.
+                            Sustentabilidade: Tecnologias verdes para combater as mudanças climáticas.
+                            Conclusão
+                            A história da tecnologia reflete a engenhosidade humana ao longo do tempo. De ferramentas de pedra às máquinas inteligentes, a tecnologia moldou e continuará moldando o mundo, trazendo oportunidades e desafios que exigem equilíbrio entre inovação, ética e sustentabilidade.
+                        <p class="links">
+                            
+                        </p>
+                    </div>
+                </div>
+
+                
+
+                <p class="text">
+              <strong>Fontes:</strong>Centre for Cyber Safety and Education e Digital Rights Watch,ychology Today e Journal of Social and Clinical Psychology, Greenpeace e a World Economic Forum.
+                
+
+                <div class="sidebar">
+                    <p class="title-sidebar">Tipos de Tecnologia
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">Tecnologia Primitiva
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Tecnologia Mecânica                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Tecnologia Digital                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Tecnologia Biológica                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Tecnologia Sustentável
+
+                            </a>
+                        </li>
+                        <li>
+                        
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear-fix">&nbsp;</div>
+            </div>
+
+
+
+
+
+
+                
+                <div class="sidebar">
+                    <p class="title-sidebar" 
+                    
+                </div>
+                <div class="clear-fix">&nbsp;</div>
+            </div>
+
+            <div class="featured-content">
+                
+                    </p>
+                </div>
+
+                <div class="column3">
+                    
+                    </p>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                &copy; Xandy - 2024
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+            
+
+        
